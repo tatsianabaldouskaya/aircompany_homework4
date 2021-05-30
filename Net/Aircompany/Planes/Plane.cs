@@ -39,7 +39,7 @@ namespace Aircompany.Planes
 
         public override string ToString()
         {
-            return $"Plane {{model={_model}, maxSpeed={_maxSpeed}, maxFlightDistance={ _maxFlightDistance}, maxLoadCapacity={_maxLoadCapacity}}}";
+            return $"{{model={_model}, maxSpeed={_maxSpeed}, maxFlightDistance={ _maxFlightDistance}, maxLoadCapacity={_maxLoadCapacity}}}";
         }
 
         public override bool Equals(object obj)
