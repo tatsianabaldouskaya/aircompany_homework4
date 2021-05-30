@@ -14,21 +14,21 @@ namespace Aircompany.Planes
 
         public override bool Equals(object obj)
         {
-            var plane = obj as PassengerPlane;
-            return plane != null &&
+            var passengerPlane = obj as PassengerPlane;
+            return passengerPlane != null &&
                    base.Equals(obj) &&
-                   _passengersCapacity == plane._passengersCapacity;
+                   _passengersCapacity == passengerPlane._passengersCapacity;
         }
 
         public override int GetHashCode()
         {
             var hashCode = 751774561;
-            hashCode = hashCode * -1521134295 + base.GetHashCode();
-            hashCode = hashCode * -1521134295 + _passengersCapacity.GetHashCode();
+            hashCode *= -1521134295 + base.GetHashCode();
+            hashCode *= -1521134295 + _passengersCapacity.GetHashCode();
             return hashCode;
         }
 
-        public int PassengersCapacityIs()
+        public int GetPassengersCapacity()
         {
             return _passengersCapacity;
         }
@@ -36,9 +36,7 @@ namespace Aircompany.Planes
        
         public override string ToString()
         {
-            return base.ToString().Replace("}",
-                    ", passengersCapacity=" + _passengersCapacity +
-                    '}');
+            return base.ToString().Replace("}",", passengersCapacity=" + _passengersCapacity +'}');
         }       
         
     }

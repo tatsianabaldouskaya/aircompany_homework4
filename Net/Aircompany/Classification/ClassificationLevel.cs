@@ -1,4 +1,4 @@
-﻿namespace Aircompany.Models
+﻿namespace Aircompany.Classification
 {
     public enum ClassificationLevel
     {
