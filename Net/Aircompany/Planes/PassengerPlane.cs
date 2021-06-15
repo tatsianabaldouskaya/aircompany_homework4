@@ -7,7 +7,7 @@ namespace Aircompany.Planes
         private int _passengersCapacity;
 
         public PassengerPlane(Plane plane, int passengersCapacity)
-            :base(_model, _maxSpeed, _maxFlightDistance, _maxLoadCapacity)
+            :base(plane)
   
         {
             _passengersCapacity = passengersCapacity;

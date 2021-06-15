@@ -2,14 +2,14 @@
 
 namespace Aircompany.Planes
 {
-    public  abstract class Plane
+    public class Plane
     {
         private string _model;
         private int _maxSpeed;
         private int _maxFlightDistance;
         private int _maxLoadCapacity;
 
-        protected Plane(string model, int maxSpeed, int maxFlightDistance, int maxLoadCapacity)
+        public Plane(string model, int maxSpeed, int maxFlightDistance, int maxLoadCapacity)
         {
             _model = model;
             _maxSpeed = maxSpeed;
@@ -17,7 +17,7 @@ namespace Aircompany.Planes
             _maxLoadCapacity = maxLoadCapacity;
         }
 
-        Plane(Plane plane)
+        protected Plane(Plane plane)
         {
             _model = plane._model;
             _maxSpeed = plane._maxSpeed;

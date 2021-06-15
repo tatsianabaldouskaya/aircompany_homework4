@@ -7,7 +7,7 @@ namespace Aircompany.Planes
         private MilitaryType _militaryType;
 
         public MilitaryPlane(Plane plane, MilitaryType militaryType)
-            : base(model, maxSpeed, maxFlightDistance, maxLoadCapacity)
+            : base(plane)
         {
             _militaryType = militaryType;
         }

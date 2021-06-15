@@ -15,15 +15,14 @@ namespace AircompanyTests.Tests
         [Test]
         public void TestHasMilitaryTransportPlane()
         {
-            Assert.IsTrue(HasMilitaryTransportPlanes());           
+            Assert.IsTrue(HasMilitaryTransportPlanes());
         }
 
         [Test]
         public void TestIsExpectedPlaneWithMaxPassengersCapacityEqualsActual()
         {
             Airport airport = new Airport(planes);
-            Assert.AreEqual(_passengerPlaneWithMaxPassengerCapacity, airport.GetPassengerPlaneWithMaxPassengersCapacity());
-           
+            Assert.AreEqual(_passengerPlaneWithMaxPassengerCapacity, airport.GetPassengerPlaneWithMaxPassengersCapacity());   
         }
 
         [Test]
