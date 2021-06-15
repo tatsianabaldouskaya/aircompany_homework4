@@ -4,10 +4,11 @@ namespace Aircompany.Planes
 {
     public class PassengerPlane : Plane
     {
-        public int _passengersCapacity;
+        private int _passengersCapacity;
 
-        public PassengerPlane(string model, int maxSpeed, int maxFlightDistance, int maxLoadCapacity, int passengersCapacity)
-            :base(model, maxSpeed, maxFlightDistance, maxLoadCapacity)
+        public PassengerPlane(Plane plane, int passengersCapacity)
+            :base(_model, _maxSpeed, _maxFlightDistance, _maxLoadCapacity)
+  
         {
             _passengersCapacity = passengersCapacity;
         }
